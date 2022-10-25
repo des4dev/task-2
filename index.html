@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+
+    <link rel="stylesheet" href="assets/main/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="r-container">
+            <div class="card-infos">
+                <div class="hr-header">
+                    <span class="h2">Payment</span>
+                    <hr class="hr">
+                </div>
+                <form class="card-info-form">
+                    <div class="card-type-radio">
+                        <!--bold-text: 600weight, font-size:18px-->
+                        <span class="bold-text">Pay With:</span>
+                        <div class="radio-inputs">
+                            <div class="pay-with-radio">
+                                <input type="radio" name="card" id="card-radio" checked="checked">
+                                <label for="card-radio" id="bold-radio-label">Card</label>
+                            </div>
+                            <div class="pay-with-radio">
+                                <input type="radio" name="card" id="bank-radio">
+                                <label for="bank-radio">Bank</label>
+                            </div>
+                            <div class="pay-with-radio">
+                                <input type="radio" name="card" id="transfer-radio">
+                                <label for="transfer-radio">Transfer</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-number-div">
+                        <span class="bold-text">Card Number</span>
+                        <input type="text" name="card-number-input" id="card-number-input" class="input-design" maxlength="16" placeholder="1234  5678  9101  1121">
+                    </div>
+                    <div class="expirationdate-cvv">
+                        <div class="expiration-date-div">
+                            <span class="bold-text">Expiration Date</span>
+                            <div class="expiration-dates input-design">
+                                <select name="expiration-mont" id="expiration-mont" class="date-section">
+                                    <option value="">MM/</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                                <select name="expiration-year" id="expiration-year" class="date-section">
+                                    <option value="YY">YY</option>
+                                    <option value="2022">22</option>
+                                    <option value="2023">23</option>
+                                    <option value="2024">24</option>
+                                    <option value="2025">25</option>
+                                    <option value="2026">26</option>
+                                    <option value="2027">27</option>
+                                    <option value="2028">28</option>
+                                    <option value="2029">29</option>
+                                    <option value="2030">30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cvv-div">
+                            <span class="bold-text">CVV</span>
+                            <input type="text" name="cvv" id="cvv" maxlength="3" placeholder="123" class="input-design">
+                        </div>
+                    </div>
+                    <div class="save-card-div">
+                        <input type="checkbox" name="save-card" id="save-card">
+                        <span class="checkbox-span"></span>
+                        <label for="save-card" id="save-card-label">Save card details</label>
+                    </div>
+                    <button type="submit" class="pay-btn">Pay USD59.28</button>
+                    <span class="privacy-text light-text-14">
+                        Your personal data will be used to process your order, support your experience throughout this website, 
+                        and for other purposes described in our privacy policy.
+                    </span>
+                </form>
+            </div>
+        </div>
+        <div class="left-container">
+            <div class="order-summary">
+                <div class="hr-header">
+                    <span class="h2">Order Summary</span>
+                    <hr class="hr">
+                </div>
+                <div class="product-details">
+                    <div class="product-img-and-dscript">
+                        <img src="assets/images/bag.png" alt="leather-bag" class="product-img" width="70px" height="70px">
+                        <div class="product-dscript column-text">
+                            <span class="bold-text"><a href="#" class="no-decoration">Taxmax Leather Bag</a></span>
+                            <span class="light-text-16">Brown Vegan Leather</span>
+                        </div>
+                    </div>
+                    <div class="price-qyt column-text">
+                        <span class="bold-text">$49.80</span>
+                        <span class="light-text-16">Qty: 2</span>
+                    </div>
+                </div>
+                <hr class="hr">
+                <div class="gift-code">
+                    <form>
+                        <input type="text" name="gift-code-input" placeholder="Gift or discount code" class="input-design gift-code-input">
+                        <button type="submit" class="gift-code-submit">Apply</button>
+                    </form>
+                </div>
+                <hr class="hr">
+                <div class="price-details">
+                    <div class="subtotal-price pd-row">
+                        <span class="bold-text-16">Subtotal</span>
+                        <span class="bold-text-16">$49.80</span>
+                    </div>
+                    <div class="shipping-price pd-row">
+                        <span class="bold-text-16">Shipping</span>
+                        <span class="bold-text-16">$7.24</span>
+                    </div>
+                </div>
+                <hr class="hr">
+                <div class="total-price">
+                    <div class="total-taxes">
+                        <span class="bold-text-16">Total</span>
+                        <span class="light-text-14">Including $2.24 in taxes</span>
+                    </div>
+                    <span class="total-price">$59.28</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
